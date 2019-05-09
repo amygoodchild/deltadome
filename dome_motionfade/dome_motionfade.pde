@@ -212,7 +212,7 @@ void setup() {
   // index: start of the triangle on fadecandy
   // x: centre of pentagon
   // y: centre of pentagon
-  // angle: angle of triangle from centre to base, in degrees to avoid destroying my brain
+  // angle: angle of triangle from centre to base, in degrees to avoid destroying my brain trying to think in radians
   // side 1 is base, clockwise from there.
 
   // top trio
@@ -221,7 +221,7 @@ void setup() {
   opc.ledEquilateral(2, 8, 641, 87, 90, 3);  // B8
 
   // top right trio
-  opc.ledEquilateral(3, 7, 956, 420, 342, 4); // C7 ***
+  opc.ledEquilateral(3, 7, 956, 420, 342, 4); // C7 
   opc.ledEquilateral(6, 3, 813, 470, 162, 5);  // F3  
   opc.ledEquilateral(3, 8, 1050, 385, 162, 5);  // C8 
 
