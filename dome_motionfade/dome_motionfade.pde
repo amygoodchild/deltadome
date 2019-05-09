@@ -139,7 +139,7 @@ void setup() {
   
   // Connect to the local instance of fadecandy server. 
   opc = new OPC(this, "127.0.0.1", 7890);
-  opc.showLocations(true);
+  opc.showLocations(false);
  
   // Mapping the LEDs 
   // index: Number for the first LED in the strip, starting with zero
@@ -315,7 +315,7 @@ void clusterAnimation(){
 
 void drawDepthDifference(){
    
-  // Go through each pixel in the depth feed (well, actually, skip through them in fours, for speed) 
+  // Go through each pixel in the depth feed (well, actually, every other pixel, for speed) 
   for (int x=0; x < depth.width; x+=2){
     for (int y=0; y < depth.height; y+=2){
       int loc = x + y * depth.width;
